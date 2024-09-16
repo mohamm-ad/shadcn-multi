@@ -1,36 +1,3 @@
-## What is this?
-
-a custom MultiSelect component that works well with shadcn/ui theming, built using react-select.
-
-## Getting started
-
-1. create a Next.js project (if you don't have one):
-
-```
-npx create-next-app my-app
-cd my-app
-
-```
-
-2. install shadcn/ui
-
-```
-npx shadcn@latest init
-
-```
-
-3. install required dependencies
-
-```
-npm install react-select lucide-react
-
-```
-
-## Create the multiselect component
-
-create multi-select.tsx in your components/ui directory:
-
-```tsx
 import React, { useMemo } from 'react';
 import Select, { MultiValue, StylesConfig } from 'react-select';
 import { ChevronDown } from 'lucide-react';
@@ -173,29 +140,3 @@ export function MultiSelect({
 }
 
 export default MultiSelect;
-```
-
-## Usage
-
-import and use the multiselect component in your pages or components:
-
-```tsx
-import { MultiSelect } from '@/components/ui/multi-select';
-const options = [
-  { value: 'option1', label: 'Option 1' },
-  { value: 'option2', label: 'Option 2' },
-  { value: 'option3', label: 'Option 3' },
-];
-export default function MyComponent() {
-  const [selectedOptions, setSelectedOptions] = useState([]);
-  return (
-    <MultiSelect
-      options={options}
-      value={selectedOptions}
-      onChange={setSelectedOptions}
-      name="my-select"
-      placeholder="Select options..."
-    />
-  );
-}
-```
