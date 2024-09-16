@@ -9,21 +9,18 @@ a custom MultiSelect component that works well with shadcn/ui theming, built usi
 ```
 npx create-next-app my-app
 cd my-app
-
 ```
 
 2. install shadcn/ui
 
 ```
 npx shadcn@latest init
-
 ```
 
 3. install required dependencies
 
 ```
 npm install react-select lucide-react
-
 ```
 
 ## Create the multiselect component
